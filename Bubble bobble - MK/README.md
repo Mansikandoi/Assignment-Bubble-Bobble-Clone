@@ -1,4 +1,6 @@
 # Bubble Bobble Clone
+#### Name: Mansi Kandoi            
+#### Student ID: 100821953
 
 This project is a single screen arcade platformer mechanics clone inspired by the classic game Bubble Bobble. The game is developed using Godot Engine version 4.5.1. The project focuses on implementing core gameplay mechanics including player movement, bubble shooting, enemy trapping, popping, scoring, and a complete game loop. This project is a mechanics clone and not a full remake of the original game.
 
@@ -69,71 +71,74 @@ The game includes an enemy rage escape mechanic. When an enemy is trapped inside
 ---
 
 ## Project File Structure
+
 The project follows the required repository structure.
 
+```text
 bubble-bobble-godot/
-├─ README.md
-├─ .gitignore
-├─ project.godot
-├─ assets/
-│  ├─ sprites/
-│  │  ├─ player.png
-│  │  ├─ enemy.png
-│  │  ├─ bubble.png
-│  │  ├─ tileset.png
-│  │  └─ ui/
-│  │     ├─ heart.png
-│  │     └─ life.png
-│  ├─ audio/
-│  │  ├─ sfx_jump.ogg
-│  │  ├─ sfx_fire.ogg
-│  │  ├─ sfx_pop.ogg
-│  │  └─ music_theme.ogg
-│  └─ fonts/
-│     └─ ui_font.tres
-├─ scenes/
-│  ├─ main/
-│  │  ├─ Main.tscn
-│  │  └─ Main.gd
-│  ├─ screens/
-│  │  ├─ Menu.tscn
-│  │  ├─ Menu.gd
-│  │  ├─ GameOver.tscn
-│  │  └─ GameOver.gd
-│  ├─ world/
-│  │  ├─ Level01.tscn
-│  │  ├─ Level01.gd
-│  │  └─ HUD.tscn
-│  └─ entities/
-│     ├─ player/
-│     │  ├─ Player.tscn
-│     │  └─ Player.gd
-│     ├─ enemies/
-│     │  ├─ Enemy.tscn
-│     │  └─ Enemy.gd
-│     └─ projectiles/
-│        ├─ Bubble.tscn
-│        └─ Bubble.gd
-├─ scripts/
-│  ├─ core/
-│  │  ├─ Constants.gd
-│  │  ├─ Save.gd
-│  │  └─ Utils.gd
-│  ├─ managers/
-│  │  ├─ GameManager.gd
-│  │  ├─ AudioManager.gd
-│  │  └─ SpawnManager.gd
-│  └─ tuning/
-│     ├─ PlayerTuning.gd
-│     ├─ BubbleTuning.gd
-│     └─ EnemyTuning.gd
-├─ resources/
-│  ├─ tilesets/
-│  │  └─ LevelTileset.tres
-│  └─ tuning/
-│     ├─ player_default.tres
-│     ├─ bubble_default.tres
-│     └─ enemy_default.tres
+├── README.md
+├── .gitignore
+├── project.godot
+├── assets/
+│   ├── sprites/
+│   │   ├── player.png
+│   │   ├── enemy.png
+│   │   ├── bubble.png
+│   │   ├── tileset.png
+│   │   └── ui/
+│   │       ├── heart.png
+│   │       └── life.png
+│   ├── audio/
+│   │   ├── sfx_jump.ogg
+│   │   ├── sfx_fire.ogg
+│   │   ├── sfx_pop.ogg
+│   │   └── music_theme.ogg
+│   └── fonts/
+│       └── ui_font.tres
+├── scenes/
+│   ├── main/
+│   │   ├── Main.tscn
+│   │   └── Main.gd
+│   ├── screens/
+│   │   ├── Menu.tscn
+│   │   ├── Menu.gd
+│   │   ├── GameOver.tscn
+│   │   └── GameOver.gd
+│   ├── world/
+│   │   ├── Level01.tscn
+│   │   ├── Level01.gd
+│   │   └── HUD.tscn
+│   └── entities/
+│       ├── player/
+│       │   ├── Player.tscn
+│       │   └── Player.gd
+│       ├── enemies/
+│       │   ├── Enemy.tscn
+│       │   └── Enemy.gd
+│       └── projectiles/
+│           ├── Bubble.tscn
+│           └── Bubble.gd
+├── scripts/
+│   ├── core/
+│   │   ├── Constants.gd
+│   │   ├── Save.gd
+│   │   └── Utils.gd
+│   ├── managers/
+│   │   ├── GameManager.gd
+│   │   ├── AudioManager.gd
+│   │   └── SpawnManager.gd
+│   └── tuning/
+│       ├── PlayerTuning.gd
+│       ├── BubbleTuning.gd
+│       └── EnemyTuning.gd
+├── resources/
+│   ├── tilesets/
+│   │   └── LevelTileset.tres
+│   └── tuning/
+│       ├── player_default.tres
+│       ├── bubble_default.tres
+│       └── enemy_default.tres
+```
 
 ---
 
