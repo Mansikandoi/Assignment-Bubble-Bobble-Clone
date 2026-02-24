@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cnlxf36awtadq"]
+
+[ext_resource type="Script" uid="uid://bumug3pl8yfe2" path="res://scenes/entities/player/player.gd" id="1_tlaso"]
+[ext_resource type="PackedScene" uid="uid://bj8nxhlnqyqio" path="res://scenes/entities/projectiles/Bubble.tscn" id="2_30dhn"]
+[ext_resource type="Texture2D" uid="uid://dc3dwb8umpvq6" path="res://assets/sprites/player.png" id="2_afppm"]
+[ext_resource type="Script" uid="uid://u172xifslpsx" path="res://scenes/entities/player/playerhitbox.gd" id="3_n1xdv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1xdv"]
+size = Vector2(49, 52)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_afppm"]
+
+[node name="Player" type="CharacterBody2D" unique_id=1810136948 groups=["enemies"]]
+collision_mask = 2
+script = ExtResource("1_tlaso")
+bubble_scene = ExtResource("2_30dhn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1209099458]
+texture = ExtResource("2_afppm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1875454188]
+position = Vector2(0.5, 4)
+shape = SubResource("RectangleShape2D_n1xdv")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1375664823]
+script = ExtResource("3_n1xdv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=109078112]
+shape = SubResource("RectangleShape2D_afppm")

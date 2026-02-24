@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bj8nxhlnqyqio"]
+
+[ext_resource type="Script" uid="uid://df5mtdrvy4nvt" path="res://scenes/entities/projectiles/bubble.gd" id="1_esxm3"]
+[ext_resource type="Texture2D" uid="uid://jmdjcv3t76dr" path="res://assets/sprites/bubble.png" id="2_5g3qy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i1kn5"]
+size = Vector2(68, 69)
+
+[node name="Bubble" type="CharacterBody2D" unique_id=1651165085]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_esxm3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=116870110]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_i1kn5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1305779256]
+texture = ExtResource("2_5g3qy")
